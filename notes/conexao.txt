@@ -1,0 +1,16 @@
+Após a instalação o Laravel ainda estava dando erro de conexão. Dessa vez tive que acessar o arquivo .env no próprio diretório do projeto e alterar o nome do gerenciador de banco:
+DB_CONNECTION= sqlite para MySQL.
+Na linha 22.
+
+Após isso criei no banco test a tabela sessions que o framework já vem com essa tabela. Tive que criar uma tabela igual no banco:
+
+->O Laravel espera que a tabela de sessões tenha, no mínimo, as seguintes colunas:
+
+id: Uma coluna de string ou varchar para armazenar o ID da sessão.
+user_id (opcional): Para armazenar o ID do usuário associado à sessão.
+ip_address (opcional): Para armazenar o endereço IP do usuário.
+user_agent (opcional): Para armazenar informações sobre o navegador do usuário.
+payload: Uma coluna de texto para armazenar os dados da sessão.
+last_activity: Um timestamp para armazenar quando a última atividade na sessão ocorreu.
+
+Depois ainda tive que acessar o diretório do PHP e descomentar a extensão ;extension=pdo_mysql no arquivo php.ini para que o framework conseguisse se conectar com o banco.

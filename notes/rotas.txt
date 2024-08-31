@@ -1,0 +1,27 @@
+Para criar outra página teve que acessar o diretório dentro da pasta do projeto 
+'resources' -> 'views' e criar nome_da_pagina.blade.php dentro.
+Para fazer com que esta página criada apareça no navegador tem que abrir o diretório 'routes', abrir o arquivo web.php e criar uma classe ou copiar a classe de rota já criada.
+
+#Segunda página(contact.blade.php)
+Route::get('/contact', function(){
+    return view('contact');
+});
+
+Classe: Route
+Método: get('/nome-da-pág', fnução(){
+    retorna a página com a função view('nome-da-pág');
+});
+
+Dentro da classe coloca o nome do arquivo que tem a página sem extensão. 
+Para abrir a página no navegador, põe ao lado do número do servidor / + nome-da-pág
+Não é obrigatório por o mesmo nome do arquivo ao lado da função anonima e o arquivo que está dentro da função View()
+
+É possível também que o arquivo dentro da View() seja outra página que está sendo chamada em uma outra rota
+
+Exemplo:
+Route::get('/nome-da-pág', function(){
+    return view('nome-de-outra-pág');
+});
+
+O professor ensinou que a classe Route é por onde o usuário irá acessar a página ou onde irá realizar uma ação dentro.
+E o return retorna a ação da função anônima.

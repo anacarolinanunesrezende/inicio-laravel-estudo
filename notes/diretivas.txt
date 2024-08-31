@@ -1,0 +1,8 @@
+Diretivas do blade = São expressões que servem para deixar o código mais limpo e prático.
+Nele é possível fazer manipulações dos dados de acordo com a lógica e exibir os resultados pela view.
+
+A condicional começa com @if (condição), @elseif(condição), @else e @endif
+
+Para declarar variável tem que por {{ $vstisvel }} dentro de uma tag do html no diretório da views.
+
+Utiliza se a chave dos valores dentro de uma rota no blade (Lá na tela do HTML5).

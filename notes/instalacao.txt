@@ -1,0 +1,47 @@
+Para fazer a instalação do Laravel em 2024 tem que acessar esse link:
+https://laravel.com/docs/11.x/installation
+
+E rodar o comando:
+composer create-project laravel/laravel nome-do-projeto
+
+Se ocorrer erros, precisa acessar a pasta do PHP e descomentar no arquivo php.ini as extensões:
+;extension=fileinfo e ;extension=zip
+
+Estava dando erro também mesmo após essas ações porque o arquivo php.ini que estava sendo mexido estava em outro caminho do que estava sendo instalado o Laravel.
+Exemplo:
+
+Caminho errado que o composer estava tentando baixar o Laravel:
+C:\Program Files\php-programa\php.ini
+
+Caminho certo que o composer deveria estar baixando o  Laravel e eu estava editando no vsc:
+C:\xampp\htdocs\php
+
+Para resolver eu tive que acessar as Configurações Avançadas do Sistema e mudar o valor da variável global 'Path' e por o caminho correto.
+
+->Atualizar o PATH do Sistema:
+
+1- Abrir as Configurações de Variáveis de Ambiente:
+
+No Windows, clique com o botão direito do mouse no ícone do Computador na área de trabalho ou no Explorador de Arquivos e selecione Propriedades.
+Clique em Configurações Avançadas do Sistema.
+Na janela Propriedades do Sistema, clique em Variáveis de Ambiente.
+Editar a Variável PATH:
+
+Na seção Variáveis do Sistema, encontre e selecione a variável Path (ou PATH).
+Clique em Editar.
+Adicionar o Caminho do PHP do XAMPP:
+
+2- Adicione o caminho para o diretório do PHP do XAMPP (por exemplo, C:\xampp\php) à lista de caminhos existentes.
+Certifique-se de que o caminho para o PHP do XAMPP esteja no início da lista para garantir que ele seja priorizado.
+Remover o Caminho Antigo (Opcional):
+
+Se houver um caminho antigo para o PHP em C:\Program Files\php-programa\, você pode removê-lo para evitar conflitos.
+Salvar as Alterações:
+
+3- Clique em OK para fechar todas as janelas e aplicar as alterações.
+
+Tem que fechar o terminal.
+
+Depois criei outro diretório para tentar baixar o Laravel e dessa vez foi baixado normalmente.
+Depois entrei no diretório criado e digitei o comando para abrir o servidor no navegador: 
+php artisan serve no terminal.

@@ -27,3 +27,7 @@ Route::get('/produtos', function(){
     return view('produtos');
     #Ou return view('contact');->Mostra o conteúdo dessa página com a url contendo o nome /produtos
 });
+#Quarta página(event.blade.php)
+Route::get('event', function(){
+    return view('event');
+});
