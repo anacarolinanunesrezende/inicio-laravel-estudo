@@ -1,0 +1,6 @@
+Para criar o design do site, tem que criar um diretório na pasta public com css.
+E depois linkar no arquivo de interesse como /css/arquivo.css
+
+O mesmo vale para o JS, cria um diretório na mesma pasta public
+
+E também as imagens devem estar armazenadas dentro de uma pasta no diretório public.

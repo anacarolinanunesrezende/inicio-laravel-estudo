@@ -1,0 +1,15 @@
+Para que um código de layout seja reaproveitado.
+
+Cria um diretório na pasta view/layouts o arquivo que será utilizado como template.
+
+Deve se colocar a diretiva @yield('content') para pegar o conteúdo e para title @yield('title').
+Isso deve ser feito no arquivo que deseja replicar um footer,
+
+E no arquivo que recebe o layout
+Digita sem a estrutura do html5 @extend('nome da pasta.nome do aquivo') e em seguida:
+@section('title', 'nome do título')
+@section('content')
+
+tags html5
+
+@endsection
