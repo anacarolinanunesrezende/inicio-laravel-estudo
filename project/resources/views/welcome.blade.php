@@ -15,5 +15,22 @@
         @else
             <p>nome correto</p>
         @endif
+
+        @for($count = 0; $count < count($list); $count++)
+        <p>{{$list[$count]}} - {{$count}}</p>
+        @endfor
+
+        @php    
+        echo "Código php";
+        @endphp
+
+<!--Comentário:-->
+        {{-- Criado em blade. Esse comentário não aparece no navegador --}}
+
+        @foreach($listNickname as $n)
+        <p>{{ $n }}</p>
+        <p>{{$loop -> index}}</p>
+        @endforeach
+
     </body>
 </html>

@@ -8,8 +8,15 @@ Route::get('/', function () {
 
     $name = 'josemar';
     $age = 52;
+    $list = [10,06,90];
+    $listNickname = ["Gatinha" , "Memeal"];
 
-    return view('welcome', ['name' => $name, 'age' => 52]);
+    return view('welcome', [
+        'name' => $name, 
+        'age' => $age,
+        'list' => $list,
+        'listNickname' => $listNickname
+    ]);
 });
 #Segunda página(contact.blade.php)
 Route::get('/contact', function(){
