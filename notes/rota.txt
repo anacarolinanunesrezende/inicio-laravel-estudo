@@ -1,0 +1,3 @@
+Pode passar parâmetros na URL. Para isso coloque {id}, dentro da função que pega as rotas no arquivo web.php no diretório routes e também coloque na rota e retorne esse valor em uma variável. Exemplo se encontra no arquivo web.php.
+
+Isso pode ajudar na hora de redirecionar um usuário específico, conforme for a lógica.

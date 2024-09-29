@@ -9,7 +9,7 @@
     <body class="">
         <p>oi</p>
         <p>{{$name}}</p>
-        <!--Não precisa por chaves-->
+        <!--Não precisa abrir chaves-->
         @if($name == 'marco aurelio')
             <p>nome errado</p>
         @else
