@@ -13,13 +13,14 @@
 
     <!--Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="/js/event.js"></script>
 </head>
 <body>
 <header>
     <nav class="navbar navbar-expand-lg navbar-light">
        <div class="collapse navbar-collapse" id="navbar">
         <a href="/" class="navbar-brand">
-            <img src="../img/people-watch-min.jpg" alt="people-watch">
+            <img src="../img/koalas.png" alt="koalas">
         </a>
         <ul class="navbar-nav">
             <li class="nav-iten">
@@ -34,10 +35,13 @@
        </div> 
     </nav>
 </header>
+<main>
+    <h1>Título</h1>
+    <img src="../img/people-watch-min.jpg" alt="eople-watch">
+ </main>
     @yield('content')
-    <footer>
+<footer>
         <p>HDC Events &copy; 2020</p>
-    </footer>
-    <script src="/js/event.js"></script>
+</footer>
 </body>
 </html>
