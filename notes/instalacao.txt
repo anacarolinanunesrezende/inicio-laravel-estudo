@@ -45,3 +45,5 @@ Tem que fechar o terminal.
 Depois criei outro diretório para tentar baixar o Laravel e dessa vez foi baixado normalmente.
 Depois entrei no diretório criado e digitei o comando para abrir o servidor no navegador: 
 php artisan serve no terminal.
+
+Colar: composer create-project laravel/laravel example-app e substituir o nome 'example-app' pelo diretório principal do projeto
