@@ -5,6 +5,6 @@
     color: red;
 }
 
-#vav-bar > img{
+.navbar-brand > img{
     width: 50px;
 }
