@@ -1,5 +1,6 @@
 Para fazer a instalação do Laravel em 2024 tem que acessar esse link:
 https://laravel.com/docs/11.x/installation
+composer create-project laravel/laravel example-app
 
 E rodar o comando:
 composer create-project laravel/laravel nome-do-projeto
