@@ -1,0 +1,1 @@
+<h1>Contacts</h1><?php /**PATH C:\Users\suporteeco\Documents\vsc\lar\inicio-laravel-estudo\hdcevents\resources\views/contact.blade.php ENDPATH**/ ?>
